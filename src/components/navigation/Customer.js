@@ -17,6 +17,7 @@ const Customer = () => {
   };
   useEffect(() => {
     let sdata = data.movies.filter((item) => item.Name.includes(search));
+    console.log(filterdata, 'filterdata');
     setFilterData(sdata);
   }, [search]);
   return (
